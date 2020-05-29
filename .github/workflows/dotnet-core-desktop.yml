@@ -30,8 +30,12 @@ jobs:
       run: dotnet tool install --global PlantUmlClassDiagramGenerator --version 1.2.0
  
      # Execute all unit tests in the solution
-    - name: Install PlantUMLClassGenerator
-      run: puml-gen Aufgabe_1\main.cs Aufgabe_1\main.pu 
+    - name: Generate UML Files
+      run: |
+           puml-gen Aufgabe_1\main.cs Aufgabe_1\main.pu 
+           cd Aufgabe_1
+           dir
+           cd ..
    
     - name: plantuml
       id: plantuml

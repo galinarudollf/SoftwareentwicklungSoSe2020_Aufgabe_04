@@ -31,7 +31,7 @@ jobs:
      # Execute all unit tests in the solution
     - name: Generate UML Files
       run: |
-           puml-gen Aufgabe_1\main.cs Aufgabe_1\main.pu 
+           puml-gen Aufgabe_1/main.cs Aufgabe_1/main.pu 
            cd Aufgabe_1
            dir
            cd ..
@@ -39,7 +39,7 @@ jobs:
     - name: Generate PNG Diagrams
       uses: cloudbees/plantuml-github-action@master
       with:
-          args: -v -tpng Aufgabe_1\main.pu
+          args: -v -tpng Aufgabe_1/main.pu
   
        # Execute all unit tests in the solution
     - name: Generate UML Files

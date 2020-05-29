@@ -39,7 +39,7 @@ jobs:
     - name: Generate PNG Diagrams
       uses: cloudbees/plantuml-github-action@master
       with:
-          args: -v -tpng Aufgabe_1/main.puml
+          args: -v -tpng ./Aufgabe_1/main.puml
   
        # Execute all unit tests in the solution
     - name: Generate UML Files

@@ -28,3 +28,16 @@ jobs:
     # Execute all unit tests in the solution
     - name: Install PlantUMLClassGenerator
       run: dotnet tool install --global PlantUmlClassDiagramGenerator --version 1.2.0
+ 
+     # Execute all unit tests in the solution
+    - name: Install PlantUMLClassGenerator
+      run: puml-gen Aufgabe_1\main.cs Aufgabe_1\main.pu 
+   
+    - name: plantuml
+      id: plantuml
+      uses: grassedge/generate-plantuml-action@v1.1
+      with:
+        path: Aufgabe_1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    

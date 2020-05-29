@@ -31,13 +31,13 @@ jobs:
      # Execute all unit tests in the solution
     - name: Generate UML Files
       run: |
-           puml-gen ./Aufgabe_1/main.cs ./Aufgabe_1/main.puml 
+           puml-gen Aufgabe_1/main.cs Aufgabe_1/main.puml 
            cd Aufgabe_1
            dir
            cd ..
  
       # Execute all unit tests in the solution
-    - name: Generate UML Files
+    - name: Generate PNG Diagrams
       uses: lokkju/github-action-plantuml@master
       with:
         args: Aufgabe_1/main.puml

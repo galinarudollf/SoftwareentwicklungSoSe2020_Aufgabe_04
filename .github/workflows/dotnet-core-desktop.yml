@@ -37,11 +37,14 @@ jobs:
            dir
            cd ..
    
-    - name: plantuml
-      id: plantuml
-      uses: grassedge/generate-plantuml-action@v1.1
+    - name: Generate PNG Diagrams
+      uses: cloudbees/plantuml-github-action@master
       with:
-        path: Aufgabe_1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    
+          args: -v -tpng Aufgabe_1\main.pu
+  
+       # Execute all unit tests in the solution
+    - name: Generate UML Files
+      run: |
+           cd Aufgabe_1
+           dir
+           cd ..

@@ -36,6 +36,12 @@ jobs:
            dir
            cd ..
  
+      # Execute all unit tests in the solution
+    - name: Generate UML Files
+      uses: lokkju/github-action-plantuml@master
+      with:
+        args: Aufgabe_1/main.puml
+ 
     # Execute all unit tests in the solution
     - name: Generate UML Files
       run: |

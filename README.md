@@ -3,7 +3,7 @@
 
 ## Bearbeitungzeit
 
-2. Juni - 15. Juni020
+2. Juni - 15. Juni 2020
 
 ## Idee der Übung
 

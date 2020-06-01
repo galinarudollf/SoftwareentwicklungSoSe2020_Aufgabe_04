@@ -1,7 +1,7 @@
 using System;
 using System.Data;
 
-namespace InterfaceDemo
+namespace Aufgabe3
 {
     // Interface SmartPhone    
     interface iSmartPhone

@@ -34,8 +34,7 @@ jobs:
       with:
         add: "Aufgabe_3/main.puml"
         author_name: GitHubAction
-        author_email: mail@example.com
-        message: 'Add new plantUML file'
+        message: "Add new version of plantUML file"
 
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

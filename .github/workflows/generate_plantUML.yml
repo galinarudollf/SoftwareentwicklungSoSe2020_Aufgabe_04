@@ -1,15 +1,12 @@
-name: plantUML
+name: generate_plantUML_file
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  push:                           
+    paths:                            
+      - 'Aufgabe_3/main.cs' 
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -31,8 +28,8 @@ jobs:
      # Execute all unit tests in the solution
     - name: Generate UML Files
       run: |
-           puml-gen Aufgabe_1/main.cs Aufgabe_1/main.puml -createAssociation
-           cd Aufgabe_1
+           puml-gen Aufgabe_3/main.cs Aufgabe_3/main.puml -createAssociation
+           cd Aufgabe_3
            dir
            cd ..
  
@@ -44,7 +41,7 @@ jobs:
 
     - uses: EndBug/add-and-commit@v4 
       with:
-        add: "Aufgabe_1/main.*"
+        add: "Aufgabe_3/main.*"
         author_name: GitHub Action
         author_email: mail@example.com
         message: 'Add new class diagramm'
@@ -52,4 +49,3 @@ jobs:
     env:
       # This is necessary in order to push a commit to the repo
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
-

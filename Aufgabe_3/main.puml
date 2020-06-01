@@ -1,6 +1,6 @@
 @startuml
 interface iSmartPhone {
-    # PhoneNumber : string <<get>> <<set>>
+    # Phonenumber : string <<get>> <<set>>
     + getOS() : string
 }
 class Program {

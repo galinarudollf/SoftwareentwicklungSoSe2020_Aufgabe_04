@@ -93,7 +93,7 @@ Spezifisches Features von Apple-Produkten sind die `AppleId` und die Methoden `B
 
 Entwerfen Sie eine Interface/Klassenhierachie, die diese Aspekte abbildet. Sie können dafür auf unterschiedlichen Wegen vorgehen.
 
-1. Sie implementieren Ihren Entwurf in C# und generieren den zugehörigen PlantUML Code daraus. Hierfür wurde eine GitHub-Action angelegt, die Ihren Code in `Aufgabe_3/main.cs` parst und daraus den plantUML Code  `Aufgabe_3/main.plum` generiert. und daraus ein Diagramm erzeugt (siehe [Link auf Action](https://github.com/ComputerScienceLecturesTUBAF/SoftwareentwicklungSoSe2020_Aufgabe_04/blob/master/.github/workflows/generate_UML_from_Csharp.yml)).
+1. Sie implementieren Ihren Entwurf in C# und generieren den zugehörigen PlantUML Code daraus. Hierfür wurde eine GitHub-Action angelegt, die Ihren Code in `Aufgabe_3/main.cs` parst und daraus den plantUML Code  `Aufgabe_3/main.plum` generiert und daraus ein Diagramm im png Format erzeugt (siehe [Link auf Action](https://github.com/ComputerScienceLecturesTUBAF/SoftwareentwicklungSoSe2020_Aufgabe_04/blob/master/.github/workflows/generate_UML_from_Csharp.yml)).
 
 2. Sie halten Ihren Entwurf direkt in PlantUML fest. Dazu exisitiert eine Datei `Aufgabe_3/main.cs`, die dann automtisch in ein png überführt wird (siehe [Link auf Action](https://github.com/ComputerScienceLecturesTUBAF/SoftwareentwicklungSoSe2020_Aufgabe_04/blob/master/.github/workflows/generate_UML_from_plum.yml)).
 

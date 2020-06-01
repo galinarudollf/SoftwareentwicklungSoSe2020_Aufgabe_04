@@ -15,17 +15,14 @@ jobs:
       with:
         fetch-depth: 0
 
-    # Install the .NET Core workload
     - name: Install .NET Core
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.101
-
-    # Execute all unit tests in the solution
+      
     - name: Install PlantUMLClassGenerator
       run: dotnet tool install --global PlantUmlClassDiagramGenerator --version 1.2.0
  
-     # Execute all unit tests in the solution
     - name: Generate UML Files
       run: |
            puml-gen Aufgabe_3/main.cs Aufgabe_3/main.puml -createAssociation
@@ -33,19 +30,12 @@ jobs:
            dir
            cd ..
  
-      # Execute all unit tests in the solution
-    - name: Generate PNG Diagrams
-      uses: lokkju/github-action-plantuml@master
-      with:
-        args: Aufgabe_1/main.puml
-
     - uses: EndBug/add-and-commit@v4 
       with:
-        add: "Aufgabe_3/main.*"
+        add: "Aufgabe_3/main.puml"
         author_name: GitHub Action
         author_email: mail@example.com
-        message: 'Add new class diagramm'
+        message: 'Add new plantUML file'
 
     env:
-      # This is necessary in order to push a commit to the repo
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

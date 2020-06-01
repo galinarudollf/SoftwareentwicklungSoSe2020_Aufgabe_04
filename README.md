@@ -96,3 +96,5 @@ Entwerfen Sie eine Interface/Klassenhierachie, die diese Aspekte abbildet. Sie k
 1. Sie implementieren Ihren Entwurf in C# und generieren den zugehörigen PlantUML Code daraus. Hierfür wurde eine Action angelegt, die Ihren Code in `Aufgabe_3/main.cs` parst, daraus den plantUML Code generiert und daraus ein Diagramm erzeugt. 
 
 2. Sie halten Ihren Entwurf direkt in PlantUML fest. Dazu exisitiert eine Datei `Aufgabe_3/main.cs`, die dann automtisch in ein png überführt wird.
+
+Fügen Sie in das PlantUML File gern Dokumentationshinweise ein, die dem Leser helfen Ihre Designidee zu verstehen. Die PlantUML Dokumentation finden Sie für Klassendiagramme unter [https://plantuml.com/de/class-diagram](https://plantuml.com/de/class-diagram)

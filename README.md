@@ -91,9 +91,9 @@ Ihr Team entwirft ein Modell, dass verschiedene Smartphone Typen mit unterschied
 
 Spezifisches Features von Apple-Produkten sind die `AppleId` und die Methoden `BuyAppFromAppStore(string AppName)` sowie `LocalizeMyApplePhone()`. Für die Android-Geräte ist die Situation etwas komplexer. Hier integrieren die verschiedenen Hersteller häufig spezfische Implementierungen. Folglich gibt es zwar einen übergreifenden `GoogleUserAccount` und eine Methode `BuyAppFromPlayStore(string AppName)` aber die Lokalisierung erfolgt mittels eigener `RunVendorSpecificLocalization()` Implementierung. 
 
-Entwerfen Sie eine Interface/Klassenhierachie, die diese Aspekte abbildet. Sie können dafür auf unterschiedlicen Wegen vorgehen.
+Entwerfen Sie eine Interface/Klassenhierachie, die diese Aspekte abbildet. Sie können dafür auf unterschiedlichen Wegen vorgehen.
 
-1. Sie implementieren Ihren Entwurf in C# und generieren den zugehörigen PlantUML Code daraus. Hierfür wurde eine Action angelegt, die Ihren Code in `Aufgabe_3/main.cs` parst, daraus den plantUML Code generiert und daraus ein Diagramm erzeugt. 
+1. Sie implementieren Ihren Entwurf in C# und generieren den zugehörigen PlantUML Code daraus. Hierfür wurde eine GitHub-Action angelegt, die Ihren Code in `Aufgabe_3/main.cs` parst und daraus den plantUML Code  `Aufgabe_3/main.plum` generiert. und daraus ein Diagramm erzeugt. 
 
 2. Sie halten Ihren Entwurf direkt in PlantUML fest. Dazu exisitiert eine Datei `Aufgabe_3/main.cs`, die dann automtisch in ein png überführt wird.
 

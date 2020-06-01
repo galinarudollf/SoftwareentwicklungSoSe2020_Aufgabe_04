@@ -1,4 +1,4 @@
-name: generate_plantUML_file
+name: generate_UML_from_Csharp
 
 on:
   push:                           

@@ -44,10 +44,10 @@ jobs:
 
     - uses: EndBug/add-and-commit@v4 
       with:
-        add: 'Aufgabe_1/main.png'
+        add: "Aufgabe_1/main.*"
         author_name: GitHub Action
         author_email: mail@example.com
-        message: 'Your commit message'
+        message: 'Add new class diagramm'
 
     env:
       # This is necessary in order to push a commit to the repo

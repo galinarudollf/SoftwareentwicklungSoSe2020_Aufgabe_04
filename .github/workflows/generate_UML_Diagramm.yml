@@ -23,8 +23,7 @@ jobs:
     - uses: EndBug/add-and-commit@v4 
       with:
         add: "Aufgabe_3/main.png"
-        author_name: GitHub Action
-        author_email: mail@example.com
+        author_name: GitHubAction
         message: 'Add new class diagramm'
 
     env:

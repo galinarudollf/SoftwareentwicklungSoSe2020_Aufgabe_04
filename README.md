@@ -7,8 +7,7 @@
 
 ## Idee der Übung
 
-Das Aufgabenblatt adressiert die Grundlagen der Objektorientierten Programmierung unter . 
-
+Das Aufgabenblatt adressiert die Grundlagen der Objektorientierten Programmierung unter C#. Dabei sollen Sie sich sowohl mit der spezifischen Semantik der Programmiersprache, aber auch den grundlegenen Konzepten zur Modellierung auseinander setzen.
 
 ## 1. Vererbung, Überschreiben von Elementen, dynamische Bindung, Indexer
 

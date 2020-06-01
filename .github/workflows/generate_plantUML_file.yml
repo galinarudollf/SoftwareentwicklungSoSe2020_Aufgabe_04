@@ -33,7 +33,7 @@ jobs:
     - uses: EndBug/add-and-commit@v4 
       with:
         add: "Aufgabe_3/main.puml"
-        author_name: GitHub Action
+        author_name: GitHubAction
         author_email: mail@example.com
         message: 'Add new plantUML file'
 

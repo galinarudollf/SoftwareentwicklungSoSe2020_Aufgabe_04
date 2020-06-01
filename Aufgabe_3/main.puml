@@ -3,6 +3,7 @@ interface iSmartPhone {
     # Phonenumber : string <<get>> <<set>>
     + getOS() : string
 }
+
 class Program {
     {static} Main(args:string[]) : void
 }

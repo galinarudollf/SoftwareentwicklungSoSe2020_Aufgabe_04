@@ -7,6 +7,7 @@ namespace Aufgabe3
     interface iSmartPhone
     {
         protected string PhoneNumber { get; set; }
+        protected string OwnerName { get; set; }
         // Hier fehlt noch einiges ...
         public string getOS();
     }

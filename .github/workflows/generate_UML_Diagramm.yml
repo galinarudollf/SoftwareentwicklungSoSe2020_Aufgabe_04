@@ -1,4 +1,4 @@
-name: generate_diagram
+name: generate_UMLDiagramm_from_puml
 
 on:
   push:                           

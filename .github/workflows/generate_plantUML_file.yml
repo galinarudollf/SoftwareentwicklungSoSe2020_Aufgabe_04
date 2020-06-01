@@ -1,4 +1,4 @@
-name: generate_UML_from_Csharp
+name: generate_UMLDiagramm_from_Csharp
 
 on:
   push:                           

@@ -36,5 +36,16 @@ jobs:
         author_name: GitHubAction
         message: "Add new version of plantUML file"
 
+    - name: Generate PNG Diagrams
+      uses: lokkju/github-action-plantuml@master
+      with:
+        args: Aufgabe_3/main.puml
+
+    - uses: EndBug/add-and-commit@v4 
+      with:
+        add: "Aufgabe_3/main.png"
+        author_name: GitHubAction
+        message: 'Add new class diagramm'
+
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -4,7 +4,7 @@ using System.Data;
 namespace Aufgabe3
 {
     // Interface SmartPhone    
-    interface iSmartPhone
+    abstract class iSmartPhone
     {
         protected string PhoneNumber { get; set; }
         // Hier fehlt noch einiges ...

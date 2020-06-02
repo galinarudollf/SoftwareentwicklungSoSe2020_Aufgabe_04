@@ -3,7 +3,7 @@ name: generate_UMLDiagramm_from_puml
 on:
   push:                           
     paths:                            
-      - 'Aufgabe_3/main.puml' 
+      - 'Aufgabe_3/diagramm.puml' 
 
 jobs:
   build:
@@ -18,11 +18,11 @@ jobs:
     - name: Generate PNG Diagrams
       uses: lokkju/github-action-plantuml@master
       with:
-        args: Aufgabe_3/main.puml
+        args: Aufgabe_3/diagramm.puml
 
     - uses: EndBug/add-and-commit@v4 
       with:
-        add: "Aufgabe_3/main.png"
+        add: "Aufgabe_3/diagramm.png"
         author_name: GitHubAction
         message: 'Add new class diagramm'
 

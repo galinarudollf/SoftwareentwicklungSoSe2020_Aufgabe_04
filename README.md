@@ -1,6 +1,5 @@
 # SoftwareentwicklungSoSe2020_Aufgabe_04
 
-
 ## Bearbeitungzeit
 
 2. Juni - 15. Juni 2020
@@ -11,33 +10,32 @@ Das Aufgabenblatt adressiert die Grundlagen der Objektorientierten Programmierun
 
 ## 1. Vererbung, Überschreiben von Elementen, dynamische Bindung, Indexer
 
-1. Zu erstellen ist ein C#-Programm, das den Wissenschaftlern ermöglicht, die Merkmale einer infolge der Technoevolution entstandenen Spezi „Helmtiger“ im Vergleich zum bereits bekannten Tiger zu untersuchen.
-    Erstellen Sie dazu die Klasse Tiger, die die Angaben zu
+1. Zu erstellen ist ein C#-Programm, das den Wissenschaftlern ermöglicht, die Merkmale einer infolge der Technoevolution entstandenen Spezi „Helmtiger“ im Vergleich zum bereits bekannten Tiger zu untersuchen. Erstellen Sie dazu die Klasse Tiger, die die Angaben zu
+    
     + Registriernummer,
     + Schädelumfang (reelle Zahl) und
-    + Schädelfestigkeit (ganze Zahl)
-  enthält.
+    + Schädelfestigkeit (ganze Zahl) enthält.
 
-  Verwenden Sie dazu automatische Properties, die einen lesenden Zugriff erlauben, und zum Initialisieren der Felder sinnvolle Konstruktoren.
+   Verwenden Sie dazu automatische Properties, die einen lesenden Zugriff erlauben, und zum Initialisieren der Felder sinnvolle Konstruktoren.
 
-  Des Weiteren soll die Klasse ToString-Methode bekommen um die Ausgabe der Objekte der Klasse zu erleichtern.
+   Des Weiteren soll die Klasse ToString-Methode bekommen um die Ausgabe der Objekte der Klasse zu erleichtern.
 
-  Die ebenfalls zu erstellende Klasse Helm erhält die Angabe
+   Die ebenfalls zu erstellende Klasse Helm erhält die Angabe
     + zum inneren Durchmesser und ebenfalls
     + die Festigkeit.
 
-  Ermöglichen Sie in der Klasse den lesenden Zugriff auf die Felder.
+   Ermöglichen Sie in der Klasse den lesenden Zugriff auf die Felder.
 
-  Die Klasse Helmtiger ist von der Klasse Tiger abzuleiten.
+   Die Klasse Helmtiger ist von der Klasse Tiger abzuleiten.
 
-  In der Klasse ist
+   In der Klasse ist
       + ein weiteres Feld als Objekt der Klasse Helm zu definieren.
 
-  Zum Zugriff auf das Feld von außerhalb der Klasse wird ein Property benötigt, das beim Zuweisen des Helms sicherstellt, dass „der Helm dem Tiger passt“, d.h. dass der Helmdurchmesser nicht kleiner als der aus dem Schädelumfang berechnete Wert ist, anderenfalls ist dem Helm-Feld der Wert null zuzuweisen.
+   Zum Zugriff auf das Feld von außerhalb der Klasse wird ein Property benötigt, das beim Zuweisen des Helms sicherstellt, dass „der Helm dem Tiger passt“, d.h. dass der Helmdurchmesser nicht kleiner als der aus dem Schädelumfang berechnete Wert ist, anderenfalls ist dem Helm-Feld der Wert null zuzuweisen.
 
-  Eine weitere Methode der Klasse HelmTiger soll die Schädelfestigkeit des „behelmten“ Tigers als die Summe der Festigkeiten des Tigers und des Helms berechnen und zurückgeben.
+   Eine weitere Methode der Klasse HelmTiger soll die Schädelfestigkeit des „behelmten“ Tigers als die Summe der Festigkeiten des Tigers und des Helms berechnen und zurückgeben.
 
-  In der Main-Methode der Klasse Register ist zum Testen der Klassen ein Array aus Objekten der Klassen Tiger und Helmtiger zu erstellen. Geben Sie alle Daten der im Feld gespeicherten Objekte aus und, wo es möglich ist, die Gesamtfestigkeit.
+   In der Main-Methode der Klasse Register ist zum Testen der Klassen ein Array aus Objekten der Klassen Tiger und Helmtiger zu erstellen. Geben Sie alle Daten der im Feld gespeicherten Objekte aus und, wo es möglich ist, die Gesamtfestigkeit.
 
 2. Verändern Sie die Methode zum Berechnen der Gesamtfestigkeit zu einer virtual – Methode. Passen Sie die Klasse Tiger und die Main-Methode der Klasse Register entsprechend an.
 
@@ -89,7 +87,7 @@ Ihr Team entwirft ein Modell, dass verschiedene Smartphone Typen mit unterschied
 |             | `receiveACall(string incommingNumber)` |      | 
 |             | `getOS()`           |  |
 
-Spezifisches Features von Apple-Produkten sind die `AppleId` und die Methoden `BuyAppFromAppStore(string AppName)` sowie `LocalizeMyApplePhone()`. Für die Android-Geräte ist die Situation etwas komplexer. Hier integrieren die verschiedenen Hersteller häufig spezfische Implementierungen. Folglich gibt es zwar einen übergreifenden `GoogleUserAccount` und eine Methode `BuyAppFromPlayStore(string AppName)` aber die Lokalisierung erfolgt mittels eigener `RunVendorSpecificLocalization()` Implementierung. 
+Daneben gibt es betriebssystemspezifische Implementierungen von Nutzerkennungen (`AppleId` vs. `Google Account`) oder aber Methoden für die unterschiedlichen App-Stores. Für die Android-Geräte ist die Situation noch komplexer. Hier integrieren die verschiedenen Hersteller häufig eigene Implementierungen, wie zum Bespiel für die Lokalisierung des Gerätes. Ihr Modell sollte also auch eine `RunVendorSpecificLocalization()` für unterschiedliche Marken enthalten.
 
 Entwerfen Sie eine Interface/Klassenhierachie, die diese Aspekte abbildet. Sie können dafür auf unterschiedlichen Wegen vorgehen.
 

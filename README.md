@@ -10,7 +10,7 @@ Das Aufgabenblatt adressiert die Grundlagen der Objektorientierten Programmierun
 
 ## 1. Vererbung, Überschreiben von Elementen, dynamische Bindung, Indexer
 
-1. Zu erstellen ist ein C#-Programm, das den Wissenschaftlern ermöglicht, die Merkmale einer infolge der Technoevolution entstandenen Spezi „Helmtiger“ im Vergleich zum bereits bekannten Tiger zu untersuchen. Erstellen Sie dazu die Klasse `Tiger`, die die Angaben zu
+1. Zu erstellen ist ein C#-Programm, das den Wissenschaftlern ermöglicht, die Merkmale einer infolge der Technoevolution entstandenen Spezies „Helmtiger“ im Vergleich zum bereits bekannten Tiger zu untersuchen. Erstellen Sie dazu die Klasse `Tiger`, die die Angaben zu
     
     + Registriernummer,
     + Schädelumfang (reelle Zahl) und

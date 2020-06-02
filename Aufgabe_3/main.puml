@@ -1,5 +1,5 @@
 @startuml
-interface iSmartPhone {
+abstract class SmartPhone {
     # PhoneNumber : string <<get>> <<set>>
     + getOS() : string
 }

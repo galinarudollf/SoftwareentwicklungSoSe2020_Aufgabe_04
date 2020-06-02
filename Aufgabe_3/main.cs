@@ -3,8 +3,8 @@ using System.Data;
 
 namespace Aufgabe3
 {
-    // Interface SmartPhone    
-    abstract class iSmartPhone
+    // So könnte man beginnen ...
+    abstract class SmartPhone
     {
         protected string PhoneNumber { get; set; }
         // Hier fehlt noch einiges ...
